@@ -1,0 +1,13 @@
+<div class="center">
+  <form [formGroup]="baseForm" (ngSubmit)="submit('sis')">
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">USN</label>
+      <input formControlName="USN" type="input" class="form-control" style="width: 250px;" id="exampleFormControlInput1" placeholder="1MS20CS001">
+    </div>
+    <div class="mb-3">
+      <label for="inputPassword" class="form-label">Password</label>
+      <input formControlName="Password" type="password" class="form-control" style="width: 250px;" id="exampleFormControlInput1">
+    </div>
+    <button type="submit" class="btn btn-primary" >submit</button>
+  </form>
+</div>

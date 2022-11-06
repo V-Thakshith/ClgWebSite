@@ -1,0 +1,33 @@
+import { Sub } from "./subjects";
+export const subjects:Sub[]=[
+    {
+       subjectCode:'CS12',
+       subjectAttendance:85,
+       subjectMarks:90 
+    },
+    {
+        subjectCode:'CS34',
+        subjectAttendance:95,
+        subjectMarks:92 
+    },
+    {
+        subjectCode:'CS56',
+        subjectAttendance:85,
+        subjectMarks:77 
+     },
+     {
+        subjectCode:'CS78',
+        subjectAttendance:65,
+        subjectMarks:57 
+     },
+     {
+        subjectCode:'CS910',
+        subjectAttendance:45,
+        subjectMarks:37 
+     },
+     {
+        subjectCode:'CS1112',
+        subjectAttendance:25,
+        subjectMarks:17 
+     }
+]
