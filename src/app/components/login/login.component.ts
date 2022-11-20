@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router, } from '@angular/router';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -22,9 +22,13 @@ export class LoginComponent implements OnInit {
        
     }
   submit(page:any){
-    console.log(this.baseForm.value)
-    this.router.navigate([`${page}`],{queryParams:{data:this.baseForm.get('USN')?.value}});
-   
+    if(!this.baseForm.get('USN')?.value || !this.baseForm.get('Password')?.value){
+      alert("Please enter usn and password")
+    }
+    else{
+      console.log(this.baseForm.value)
+      this.router.navigate([`${page}`],{queryParams:{data:this.baseForm.get('USN')?.value}});
+    }   
   }
   
 
